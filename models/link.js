@@ -15,7 +15,8 @@ module.exports = (sequelize, DataTypes) => {
   };
   Link.init({
     name: DataTypes.STRING,
-    url: DataTypes.STRING
+    url: DataTypes.STRING,
+    slug: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Link',
